@@ -1,0 +1,92 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Nunito', Helvetica, sans-serif;
+$headingFont: 'Nunito', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2em;
+$heading2Size: 1.2em;
+$heading3Size: 1em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+section {
+	h1, h2, h3, h4, h5, h6 {
+		text-align: left;
+		// margin-bottom: 100px !important;
+		font-weight: 700 !important;
+	}
+	h1 {
+		color: #bf596a !important;
+	}
+}
+
+.reveal p {
+	text-align: left;
+}
+
+.reveal ul, .reveal ol {
+	width: 100%;
+	line-height: 2em;
+}
+
+.reveal .hljs.has-highlights tr:not(.highlight-line) {
+    opacity: 0;
+}
+
+.reveal pre code {
+	max-height: 900px;
+	font-size: 35px;
+	line-height: 45px;
+}
+
+.reveal pre {
+	margin: 40px auto;
+	border: 30px solid white;
+	width: 1800px;
+}
+
+.reveal .hljs-ln-numbers {
+	opacity: .2;
+}
+
+.reveal code {
+	font-family: 'Cascadia Mono';
+}
