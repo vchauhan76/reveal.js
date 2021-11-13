@@ -336,6 +336,17 @@ const Plugin = () => {
 	 */
 	function addAttributes( section, element, previousElement, separatorElementAttributes, separatorSectionAttributes ) {
 
+		// Koushik: Forcing all bullets to be data fragments so we can step through
+		if (element.tagName === 'UL' || element.tagName === 'OL') {
+			 element.childNodes.forEach((li, index) => {
+				 if (li.tagName === 'LI') {
+					li.setAttribute('data-fragment-index', index + 1);
+					li.classList.add('fragment');
+				 }
+			 	
+			 });
+		}
+
 		if ( element != null && element.childNodes != undefined && element.childNodes.length > 0 ) {
 			var previousParentElement = element;
 			for( var i = 0; i < element.childNodes.length; i++ ) {
