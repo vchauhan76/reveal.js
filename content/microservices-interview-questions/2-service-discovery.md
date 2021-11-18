@@ -4,10 +4,8 @@
 --
 
 # What is the interviewer looking for?
-- Whether you know concept of Service Discovery.
-- Since Service discovery is one of important component in microservices arcitecture, Hence interviewer will see if you came accross
-  such concept while working on your project.
-- If you are able to give some concept on this(Service Discovery) design pattern interviewer can get along to next questions on it.
+- Understanding of the design pattern
+- How the pattern applies to microservices
 
 --
 
