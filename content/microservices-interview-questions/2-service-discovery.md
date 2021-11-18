@@ -10,14 +10,11 @@
 --
 
 # Answer
-- Service Discovery is Design Pattern used in MicroServices architecture.
-- Since in Microservices architecture in order your code makes Rest API call to another service
-  - your code needs to know the network location (IP address and port) of a service instance.
-  - In a traditional application running on physical hardware, the network locations of service instances are relatively static. For example, your code can read the network       locations from a configuration file that is occasionally updated.
-  - In a modern, cloud‑based microservices application, however, this is a much more difficult problem to solve.
-  - Service instances have dynamically assigned network locations. 
-  - Moreover, the set of service instances changes dynamically because of autoscaling, failures, and upgrades. Consequently,your client code needs to use a more elaborate         service discovery mechanism.
-  - Service Discovery solves this problem.
+- Service Discovery is a design pattern used in microservices architecture.
+- Helps microservices dynamically locate and call dependent services
+- Necessary in microservice architecture because of dynamically assigned IPs and hosts
+- Helps with autoscaling, handling failures and upgrades
+
 
 ---
 
