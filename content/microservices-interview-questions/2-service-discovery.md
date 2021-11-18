@@ -59,7 +59,7 @@
 
 
 ## Question
-# Is it Mandatory to Use Service Discovery in Microservice Architecture.
+# Is it mandatory to use service discovery in microservice architecture?
 
 --
 
