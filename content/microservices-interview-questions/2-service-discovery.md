@@ -19,7 +19,7 @@
 ---
 
 ## Question
-# What are types of patterns/types available in Service Discovery
+# What are types of patterns/types available in Service Discovery?
 
 --
 
