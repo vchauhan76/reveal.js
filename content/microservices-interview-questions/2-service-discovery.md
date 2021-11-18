@@ -74,5 +74,4 @@
 
 - No.
 - It depends on business scenario.
-- If we have large number of microservies and these microservies can be upstream or downstream, then you can use service discovery.
-- But if microservies are small in numbers and mostly independent in business context, doen not require communication with each other then not required.
+- Ideal when there are a large number of microservices
