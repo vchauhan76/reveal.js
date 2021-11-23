@@ -94,4 +94,62 @@
 
 - No.
 - It depends on business scenario.
-- Ideal when there are a large number of microservices
+- Ideal when there are a large number of microservices.
+
+
+---
+
+## Question
+# What is Service Registry ?
+
+--
+
+# What is the interviewer looking for ?
+- If you are aware of Service Registry concept.
+- How service registry helps in service discovery. 
+
+--
+
+## Answer
+- service registry is a key part of service discovery.
+- It is a database containing the network locations of service instances.
+- Client can cache network locations obtained from service registry.
+- Netflix Eureka if good example of service registry, It provides REST API for registering and quering service instances.
+- Some examples of service registries includes
+   - etcd
+   - consul
+   - Apache Zookeeper
+ 
+
+---
+
+## Question
+# What are different Service Registration options/pattern ? 
+
+--
+
+# What is interviewer looking for ?
+- If you are aware of this concept.
+
+## Answer
+- There are two types of Service Registration pattern
+  - self registration pattern.
+  - third patry registration pattern. 
+
+- The Self-Registration Pattern.
+  -  When using the self‑registration pattern, a service instance is responsible for registering and deregistering itself with the service registry. 
+  -  A service instance sends heartbeat requests to prevent its registration from expiring.
+  -  Netflix OSS Eureka client is good example.
+  -  One benefit is that it is relatively simple and doesn’t require any other system components. 
+  -  Major drawback is that it couples the service instances to the service registry. 
+
+- The Third‑Party Registration Pattern
+  - Here service instances aren’t responsible for registering themselves with the service registry.
+  - Another system component known as the service registrar handles the registration and deregistration of service instances.
+  - One example of a service registrar is the open source Registrator project. Another example of a service registrar is NetflixOSS Prana.
+  - A major benefit is that services are decoupled from the service registry. 
+  - One drawback of this pattern is that unless it’s built into the deployment environment, it is yet another highly available system component that you need to set up and       manage.
+
+
+
+
